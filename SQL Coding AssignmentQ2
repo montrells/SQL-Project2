@@ -1,0 +1,3 @@
+SELECT DISTINCT AVG(salary) AS "Salary_Average_Per_Title"
+FROM salaries
+JOIN titles ON salaries.emp_no = titles.emp_no;

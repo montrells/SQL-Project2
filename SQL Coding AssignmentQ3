@@ -1,0 +1,4 @@
+SELECT SUM(salary) AS "Marketing_Total_Salary"
+FROM dept_manager
+JOIN salaries ON dept_manager.emp_no = salaries.emp_no
+WHERE dept_no = 'd001' AND salaries.from_date > '1990-01-01' AND salaries.to_date < '1992-01-01';
